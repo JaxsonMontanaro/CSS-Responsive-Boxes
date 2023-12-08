@@ -1,3 +1,91 @@
 body {
-  background: papayawhip;
+  background: silver;
+}
+
+/* Mobile view styles */
+@media (max-width: 600px) {
+  .a, .b, .c, .d, .e, .f {
+    background-color: gold;
+    min-height: 100px;
+    width: 100%;
+  }
+
+  /* Adjust the layout for narrow screens */
+  .container {
+    display: grid;
+    grid-template-areas:
+      'a a a'
+      'b b b'
+      'c d e'
+      'f f f';
+    gap: 10px;
+  }
+}
+
+.a {
+  grid-area: a;
+}
+
+.b {
+  grid-area: b;
+}
+
+.c {
+  grid-area: c;
+}
+
+.d {
+  grid-area: d;
+}
+
+.e {
+  grid-area: e;
+}
+
+.f {
+  grid-area: f;
+}
+
+
+
+/* Wider view styles */
+@media (min-width: 601px) {
+  .a, .b, .c, .d, .e, .f {
+    background-color: blue;
+    min-height: 150px;
+  }
+
+  /* CSS Grid layout for wider view */
+  .container {
+    display: grid;
+    grid-template-areas:
+      'a a a a'
+      'b b b f'
+      'c d e f';
+    gap: 10px;
+  }
+
+  .a {
+    grid-area: a;
+  }
+
+  .b {
+    grid-area: b;
+  }
+
+  .c {
+    grid-area: c;
+  }
+
+  .d {
+    grid-area: d;
+  }
+
+  .e {
+    grid-area: e;
+  }
+
+  .f {
+    grid-area: f;
+  }
 }
